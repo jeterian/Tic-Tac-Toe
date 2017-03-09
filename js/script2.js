@@ -33,18 +33,17 @@ var moduleTicTacToe = +function () {
     });
 
     //create object for player
-    function Player(name, item) {
+    function Player(name) {
         this.name = name;
         this.turn = false;
-        this.item = document.getElementById(item);
     }
 
-    function player1(name, item) {
-        Player.call(this, name, item);
+    function player1(name) {
+        Player.call(this, name);
     }
 
-    function player2(name, item) {
-        Player.call(this, name, item);
+    function player2(name) {
+        Player.call(this, name);
     }
 
     //prototypes/instantiation//arrays associated with players
